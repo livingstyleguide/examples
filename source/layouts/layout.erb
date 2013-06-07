@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= data.page.title || "Living Style Guide" %></title>
+    <%= stylesheet_link_tag "styleguide" %>
+    <%= javascript_include_tag  "modernizr" %>
+  </head>
+  <body class="livingstyleguide">
+    <%= yield %>
+    <footer class="livingstyleguide--footer">
+      <p>Last update: <time><%= Time.parse(`git log -1 --format="%cd"`).strftime('%Y-%m-%d %T') %></time></p>
+      <p>Designed and developed by: <a href="http://www.hagenburger.net" class="hagenburger">Nico Hagenburger</a></p>
+    </footer>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>

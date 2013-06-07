@@ -1,0 +1,41 @@
+$column-width: 114px
+$gap-width: 4px
+$columns-count: 8
+
+%column
+  float: left
+  margin-left: $gap-width
+
+@function column-width($count)
+  @return $count * $column-width + ($count - 1) * $gap-width
+
+$page-width: column-width($columns-count)
+
+.grid
+  clear: left
+  margin-left: -$gap-width
+  +pie-clearfix
+
+.grid--starts-new-line
+  clear: left
+
+@for $i from 1 through $columns-count
+  .grid--spans-#{$i}
+    @extend %column
+    width: column-width($i)
+
+@for $i from 1 to $columns-count
+  .grid--skips-#{$i}
+    margin-left: $i * $column-width + ($i + 1) * $gap-width
+
+$small-column-width: 112px
+%small-grid
+  @for $i from 1 through $columns-count
+    .grid--spans-#{$i}
+      @extend %column
+      width: $i * $small-column-width + ($i - 1) * $gap-width
+
+  @for $i from 1 to $columns-count
+    .grid--skips-#{$i}
+      margin-left: $i * $small-column-width + ($i + 1) * $gap-width
+

@@ -1,0 +1,17 @@
+# Ignore bundler config:
+
+/.bundle
+
+# Ignore the build directory:
+
+/build
+
+# Ignore Sass’ cache:
+
+/.sass-cache
+/.rvmrc
+
+# RGBA images as IE workaround:
+
+/source/images/rgbapng/
+

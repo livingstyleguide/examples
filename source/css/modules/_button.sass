@@ -1,0 +1,60 @@
+$button-default-shadow: rgba(white, 0.9) 0 1px 0
+
+=button-background($color)
+  $start: lighten($color, 5%)
+  $end: darken($color, 5%)
+  background: $color
+  @include background(linear-gradient(top, $start, $color, $end), $color)
+  @include filter-gradient($start, $end)
+
+=button($background, $text, $shadow: $button-default-shadow)
+  border-color: darken($background, 10%)
+  color: $text
+  @include background(linear-gradient(top, lighten($background, 5%), $background, darken($background, 5%)), $background)
+  @include button-background($background)
+  @include box-shadow($shadow, rgba(darken($background, 20%), 0.2) 0 -1px 0 inset, rgba(lighten($background, 15%), 0.2) 0 1px 0 inset)
+
+  &:hover
+    border-color: darken($background, 15%)
+    color: darken($text, 5%)
+    text-decoration: none
+    @include button-background(darken($background, 5%))
+
+  &:active
+    border-color: darken($background, 30%)
+    color: darken($text, 20%)
+    @include button-background(darken($background, 20%))
+
+.button
+  @extend %large-font
+  border: 1px solid
+  cursor: pointer
+  display: inline-block
+  font-weight: normal
+  height: 30px
+  line-height: 22px
+  margin: 0
+  overflow: visible
+  padding: 3px 10px
+  text-decoration: none
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  -webkit-font-smoothing: inherit
+  @include border-radius(5px)
+  @include user-select(none)
+  @include box-sizing(border-box)
+  @include button($red, $white)
+  @include text-shadow(rgba(black, 0.5) 0 -1px 0)
+
+  &[disabled],
+  &.is-disabled
+    cursor: default
+    @include opacity(0.3)
+
+  &.is-small
+    @extend %normal-font
+    line-height: 18px
+    height: 20px
+    padding: 1px 7px
+
