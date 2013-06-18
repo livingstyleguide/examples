@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "middleman", "~>3.0.9"
+gem "middleman", "~>3.1"
 gem "livingstyleguide"
 gem "compass-rgbapng"
