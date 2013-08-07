@@ -6,7 +6,6 @@
 # First: gem install susy --pre
 # require 'susy'
 require 'livingstyleguide'
-require 'rgbapng'
 
 set :markdown_engine, ::LivingStyleGuide::RedcarpetTemplate
 

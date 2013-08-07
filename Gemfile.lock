@@ -13,9 +13,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-rgbapng (0.2.0)
-      chunky_png (>= 0.8.0)
-      compass (>= 0.10.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.0)
@@ -94,6 +91,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass-rgbapng
   livingstyleguide
   middleman (~> 3.1)
