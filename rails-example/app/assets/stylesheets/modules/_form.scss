@@ -1,0 +1,93 @@
+.form {
+  margin: (2 * $gap-width) 0;
+}
+
+input:-moz-placeholder {
+  color: mix($light-gray, $gray);
+}
+
+::-webkit-input-placeholder {
+  color: mix($light-gray, $gray);
+}
+
+.placeholder {
+  color: mix($light-gray, $gray);
+}
+
+
+//// FIELDS ////;
+
+.form--field {
+  margin-bottom: 2 * $gap-width;
+  margin-top: 2 * $gap-width;
+
+  &.is-number {
+    text-align: right;
+  }
+}
+
+.form--label {
+  color: $gray;
+  display: block;
+  margin: 0 1px 2px;
+
+  &:after {
+    content: ":";
+  }
+
+  .form--field.is-required & {
+    color: darken(mix($gray, $blue, 70%), 20%);
+    font-weight: bold;
+
+    &:after {
+      content: ":*";
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.form--field-container {
+  @extend %large-font;
+  background: $white;
+  border: 1px $gray solid;
+  color: $black;
+  padding: 3px;
+  width: 100%;
+  @include box-shadow(rgba(white, 0.5) 0 1px 0, lighten($gray, 15%) 0 1px 3px inset);
+  @include display-box;
+  @include box-sizing(border-box);
+  @include clearfix;
+
+  .form--field.is-required & {
+    border-color: $blue;
+    @include box-shadow(rgba(white, 0.5) 0 1px 0, rgba($blue, 0.6) 0 0 2px inset, lighten($gray, 15%) 0 1px 3px inset);
+  }
+
+  .no-boxshadow .form--field.is-required & {
+    border-width: 2px;
+    padding: 2px;
+    @include box-shadow(none);
+  }
+
+  .form--field.is-disabled & {
+    background: rgba($white, 0.3);
+    color: $gray;
+    @include text-shadow(rgba($white, 0.5) 0 1px 0);
+  }
+}
+
+.form--textfield {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  display: block;
+  font: inherit;
+  font-weight: bold;
+  line-height: 23px;
+  padding: 0 1px;
+  margin: 0;
+  outline: 0;
+  text-align: inherit;
+  @include box-flex(1);
+}
+

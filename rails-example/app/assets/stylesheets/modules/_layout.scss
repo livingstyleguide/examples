@@ -1,0 +1,17 @@
+.layout {
+  @extend %base-font;
+  background: lighten($light-gray, 10%);
+}
+
+.layout--container {
+  margin: 0 auto;
+  width: $page-width;
+}
+
+.layout--page-title {
+  @extend %big-font;
+  color: $red;
+  margin: 0.75em 0;
+  text-transform: uppercase;
+}
+
