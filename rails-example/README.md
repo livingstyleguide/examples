@@ -29,8 +29,8 @@ Quick Documentation
 
 * [styleguide.html.lsg](https://github.com/hagenburger/livingstyleguide-example/blob/master/rails-example/app/assets/stylesheets/styleguide.html.lsg) defines which styles to use
 
-* For every `@import` in your SCSS/Sass source, the LivingStyleGuide
-  checks for a Markdown file with the same name at the same location.
+* For every [`@import` in your SCSS/Sass source](https://github.com/hagenburger/livingstyleguide-example/blob/master/rails-example/app/assets/stylesheets/application.css.scss#L13), the LivingStyleGuide
+  checks for a [Markdown file with the same name at the same location](https://github.com/hagenburger/livingstyleguide-example/blob/master/rails-example/app/assets/stylesheets/modules/_button.md).
 
 * There are some Markdown extensions that will help you to document your
   CSS. Mostly you want to create an HTML example like this:
