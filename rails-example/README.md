@@ -27,7 +27,7 @@ Now you can open the style guide at <http://localhost:3000/assets/styleguide.htm
 Quick Documentation
 -------------------
 
-* **styleguide.html.lsg** defines which styles to use
+* [styleguide.html.lsg](https://github.com/hagenburger/livingstyleguide-example/blob/master/rails-example/app/assets/stylesheets/styleguide.html.lsg) defines which styles to use
 
 * For every `@import` in your SCSS/Sass source, the LivingStyleGuide
   checks for a Markdown file with the same name at the same location.
