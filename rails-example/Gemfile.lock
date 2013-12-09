@@ -40,8 +40,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-rails (2.0.alpha.0)
-      compass (>= 0.12.2, < 0.14)
+    compass-rails (1.1.2)
+      compass (>= 0.12.2)
     erubis (2.7.0)
     execjs (2.0.2)
     fssm (0.2.10)
@@ -127,7 +127,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  compass-rails (~> 2.0.alpha.0)
+  compass-rails (~> 1.1.2)
   jbuilder (~> 1.2)
   jquery-rails
   livingstyleguide (= 0.6.0.alpha.1)
