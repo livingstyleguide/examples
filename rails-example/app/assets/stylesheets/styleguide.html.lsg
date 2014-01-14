@@ -1,18 +1,8 @@
-// (1) Import your SCSS/Sass code
-//     You need to include “.css.scss” to make it work.
+title: "My Living Style Guide"
 
-@import "application.css.scss";
+source: application.css.scss
 
-
-// (2) Import the styles from the gem:
-
-@import "livingstyleguide";
-
-
-// (3) Import the variables from the files you want:
-
-@import "variables:base/colors";
-
-
-// Done :)
+styleguide-scss: |
+  // Import variables from this file:
+  @import "variables:base/colors";
 
