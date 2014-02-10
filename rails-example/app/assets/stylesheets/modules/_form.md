@@ -5,7 +5,7 @@
 All “normal” forms have the class `.form` attached. Non-normal forms
 could be search fields etc.
 
-~~~ example
+~~~
 <form class="***form***">
   Content goes here.
 </form>
@@ -15,7 +15,7 @@ could be search fields etc.
 
 Simple default example:
 
-~~~ example
+~~~
 <form class="form">
   ***
   <div class="form--field">
@@ -30,7 +30,7 @@ Simple default example:
 
 Required field:
 
-~~~ example
+~~~
 <form class="form">
   <div class="form--field ***is-required***">
     <label class="form--label" for="example-id-1">Some label</label>
@@ -43,7 +43,7 @@ Required field:
 
 Disabled field:
 
-~~~ example
+~~~
 <form class="form">
   <div class="form--field ***is-disabled***">
     <label class="form--label" for="example-id-1">Some label</label>
@@ -56,7 +56,7 @@ Disabled field:
 
 For numbers:
 
-~~~ example
+~~~
 <form class="form">
   <div class="form--field ***is-number***">
     <label class="form--label" for="example-id-2">Some label</label>
