@@ -1,6 +1,7 @@
 # Layout
 
-~~~ layout-example
+~~~
+@full-width
 <body class="layout">
   <div class="layout--container">
     <h1 class="layout--page-title">Page Title</h1>

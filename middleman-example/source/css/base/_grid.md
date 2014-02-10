@@ -2,7 +2,8 @@
 
 The layout is based on <var class="$columns-count"></var> Columns with <var class="$column-width"></var> width each and a gap of <var class="$gap-width"></var>. Most elements can span or skip several columns.
 
-~~~ layout-example
+~~~
+@full-width
 <div class="layout--container">
   <div class="some-class grid">
     <div class="some-other-class grid--spans-1"></div>
