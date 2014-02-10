@@ -1,3 +1,4 @@
+
 ###
 # Compass
 ###
@@ -6,8 +7,6 @@
 # First: gem install susy --pre
 # require 'susy'
 require 'livingstyleguide'
-
-set :markdown_engine, ::LivingStyleGuide::RedcarpetTemplate
 
 # Change Compass configuration
 # compass_config do |config|
@@ -23,6 +22,8 @@ set :markdown_engine, ::LivingStyleGuide::RedcarpetTemplate
 # With no layout
 # page "/path/to/file.html", :layout => false
 #
+page "/styleguide.html", layout: false
+
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 #
