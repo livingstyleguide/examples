@@ -1,6 +1,17 @@
 # Colors
 
+Primary:
+
 ~~~
-@colors base/colors
+@colors
+$red $gray $blue
 ~~~
+
+Secondary:
+
+~~~
+@colors
+$black $green $light-gray $white -
+~~~
+
 
