@@ -2,7 +2,3 @@ title: "My Living Style Guide"
 
 source: application.css.scss
 
-styleguide-scss: |
-  // Import variables from this file:
-  @import "variables:base/colors";
-

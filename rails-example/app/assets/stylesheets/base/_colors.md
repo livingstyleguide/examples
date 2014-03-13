@@ -1,3 +1,6 @@
 # Colors
 
-{{variables:base/colors}}
+~~~
+@colors base/colors
+~~~
+
