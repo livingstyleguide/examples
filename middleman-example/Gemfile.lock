@@ -1,8 +1,8 @@
 GIT
   remote: git@github.com:middleman/middleman-sprockets.git
-  revision: 2f7eb370d16da067789823d864cfd9207cab953e
+  revision: 27767480eed9da4ff71cf444df846d23cb737b1b
   specs:
-    middleman-sprockets (3.2.0)
+    middleman-sprockets (3.3.1)
       middleman-core (>= 3.2)
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
@@ -10,22 +10,23 @@ GIT
 
 GIT
   remote: git@github.com:middleman/middleman.git
-  revision: 049866ee2e74972292687a7d1dff0e69f942f83a
+  revision: 250c87ef61b5f5c49bf5dc4ea1294959764ecaef
   branch: v3-stable
   specs:
-    middleman (3.2.2)
+    middleman (3.3.0)
       coffee-script (~> 2.2.0)
       compass (>= 0.12.2)
       execjs (~> 1.4.0)
       haml (>= 3.1.6)
       kramdown (~> 1.2)
-      middleman-core (= 3.2.2)
+      middleman-core (= 3.3.0)
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.1.20)
       uglifier (~> 2.4.0)
-    middleman-core (3.2.2)
+    middleman-core (3.3.0)
       activesupport (~> 3.2.6)
       bundler (~> 1.1)
+      erubis
       hooks (~> 0.3)
       i18n (~> 0.6.9)
       listen (~> 1.1)
@@ -37,18 +38,19 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (3.2.16)
+    activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    chunky_png (1.2.9)
+    chunky_png (1.3.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    compass (0.12.2)
+    compass (0.12.3)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
-      sass (~> 3.1)
+      sass (= 3.2.14)
+    erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
@@ -59,39 +61,39 @@ GEM
     hooks (0.3.3)
     i18n (0.6.9)
     json (1.8.1)
-    kramdown (1.3.1)
+    kramdown (1.3.2)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    livingstyleguide (1.0.0.alpha.3)
+    livingstyleguide (1.0.2)
       compass
-      hooks
+      hooks (= 0.3.3)
       minisyntax
-      redcarpet
+      redcarpet (~> 3.0.0)
       sass
       thor
       tilt
     minisyntax (0.2.3)
-    multi_json (1.8.4)
+    multi_json (1.9.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.0)
+    rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
     redcarpet (3.0.0)
     sass (3.2.14)
-    sprockets (2.10.1)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sprockets-helpers (1.0.1)
       sprockets (~> 2.0)
-    sprockets-sass (1.0.2)
+    sprockets-sass (1.0.3)
       sprockets (~> 2.0)
       tilt (~> 1.1)
     thor (0.18.1)
@@ -104,6 +106,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  livingstyleguide (= 1.0.0.alpha.3)
+  livingstyleguide (= 1.0.2)
   middleman!
   middleman-sprockets!

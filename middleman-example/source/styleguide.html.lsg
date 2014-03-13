@@ -2,7 +2,3 @@ title: "My Living Style Guide"
 
 source: css/desktop.css.sass
 
-styleguide-scss: |
-  // Import variables from this file:
-  @import "variables:base/colors";
-
