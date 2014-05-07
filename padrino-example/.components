@@ -1,0 +1,9 @@
+---
+:orm: none
+:test: none
+:mock: none
+:script: none
+:renderer: haml
+:stylesheet: sass
+:namespace: PadrinoLivingstyleguide
+:migration_format: number
