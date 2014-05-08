@@ -36,7 +36,7 @@ Quick Documentation
 * There are some Markdown extensions that will help you to document your
   CSS. Mostly you want to create an HTML example like this:
 
-      ~~~ example
+      ~~~
       <div class="***hello-world***">
         Hello World
       </div>
