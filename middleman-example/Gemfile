@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "middleman", git: 'git@github.com:middleman/middleman.git', branch: 'v3-stable'
-gem "middleman-sprockets", git: 'git@github.com:middleman/middleman-sprockets.git'
-gem "livingstyleguide", '1.0.2'
+gem "middleman"
+gem "middleman-sprockets"
+gem "livingstyleguide"
 

@@ -1,58 +1,25 @@
-GIT
-  remote: git@github.com:middleman/middleman-sprockets.git
-  revision: 27767480eed9da4ff71cf444df846d23cb737b1b
-  specs:
-    middleman-sprockets (3.3.1)
-      middleman-core (>= 3.2)
-      sprockets (~> 2.1)
-      sprockets-helpers (~> 1.0.0)
-      sprockets-sass (~> 1.0.0)
-
-GIT
-  remote: git@github.com:middleman/middleman.git
-  revision: 250c87ef61b5f5c49bf5dc4ea1294959764ecaef
-  branch: v3-stable
-  specs:
-    middleman (3.3.0)
-      coffee-script (~> 2.2.0)
-      compass (>= 0.12.2)
-      execjs (~> 1.4.0)
-      haml (>= 3.1.6)
-      kramdown (~> 1.2)
-      middleman-core (= 3.3.0)
-      middleman-sprockets (>= 3.1.2)
-      sass (>= 3.1.20)
-      uglifier (~> 2.4.0)
-    middleman-core (3.3.0)
-      activesupport (~> 3.2.6)
-      bundler (~> 1.1)
-      erubis
-      hooks (~> 0.3)
-      i18n (~> 0.6.9)
-      listen (~> 1.1)
-      rack (>= 1.4.5)
-      rack-test (~> 0.6.1)
-      thor (>= 0.15.2, < 2.0)
-      tilt (~> 1.4.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (3.2.17)
-      i18n (~> 0.6, >= 0.6.4)
-      multi_json (~> 1.0)
-    chunky_png (1.3.0)
+    activesupport (4.0.5)
+      i18n (~> 0.6, >= 0.6.9)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    chunky_png (1.3.1)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    compass (0.12.3)
+    compass (0.12.6)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
-      sass (= 3.2.14)
+      sass (~> 3.2.19)
+    compass-import-once (1.0.4)
+      sass (>= 3.2, < 3.5)
     erubis (2.7.0)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
+    execjs (2.0.2)
     ffi (1.9.3)
     fssm (0.2.10)
     haml (4.0.5)
@@ -61,12 +28,12 @@ GEM
     hooks (0.3.3)
     i18n (0.6.9)
     json (1.8.1)
-    kramdown (1.3.2)
+    kramdown (1.3.3)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    livingstyleguide (1.0.2)
+    livingstyleguide (1.0.4)
       compass
       hooks (= 0.3.3)
       minisyntax
@@ -74,31 +41,68 @@ GEM
       sass
       thor
       tilt
+    middleman (3.3.2)
+      coffee-script (~> 2.2.0)
+      compass (>= 0.12.4)
+      compass-import-once (~> 1.0.4)
+      execjs (~> 2.0)
+      haml (>= 4.0.5)
+      kramdown (~> 1.2)
+      middleman-core (= 3.3.2)
+      middleman-sprockets (>= 3.1.2)
+      sass (>= 3.2.17, < 4.0)
+      uglifier (~> 2.5)
+    middleman-core (3.3.2)
+      activesupport (~> 4.0.1)
+      bundler (~> 1.1)
+      erubis
+      hooks (~> 0.3)
+      i18n (~> 0.6.9)
+      listen (~> 1.1)
+      padrino-helpers (~> 0.12.1)
+      rack (>= 1.4.5, < 2.0)
+      rack-test (~> 0.6.2)
+      thor (>= 0.15.2, < 2.0)
+      tilt (~> 1.4.1, < 2.0)
+    middleman-sprockets (3.3.3)
+      middleman-core (>= 3.2)
+      sprockets (~> 2.2)
+      sprockets-helpers (~> 1.1.0)
+      sprockets-sass (~> 1.1.0)
     minisyntax (0.2.3)
-    multi_json (1.9.0)
+    minitest (4.7.5)
+    multi_json (1.10.0)
+    padrino-helpers (0.12.1)
+      i18n (~> 0.6, >= 0.6.7)
+      padrino-support (= 0.12.1)
+      tilt (~> 1.4.1)
+    padrino-support (0.12.1)
+      activesupport (>= 3.1)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.4)
-    rb-inotify (0.9.3)
+    rb-inotify (0.9.4)
       ffi (>= 0.5.0)
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
     redcarpet (3.0.0)
-    sass (3.2.14)
-    sprockets (2.11.0)
+    sass (3.2.19)
+    sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-helpers (1.0.1)
+    sprockets-helpers (1.1.0)
       sprockets (~> 2.0)
-    sprockets-sass (1.0.3)
+    sprockets-sass (1.1.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    thor (0.18.1)
+    thor (0.19.1)
+    thread_safe (0.3.3)
     tilt (1.4.1)
-    uglifier (2.4.0)
+    tzinfo (0.3.39)
+    uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
 
@@ -106,6 +110,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  livingstyleguide (= 1.0.2)
-  middleman!
-  middleman-sprockets!
+  livingstyleguide
+  middleman
+  middleman-sprockets
