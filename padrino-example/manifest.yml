@@ -1,0 +1,8 @@
+---
+applications:
+- name: padrino-livingstyleguide
+  memory: 128M
+  instances: 1
+  host: padrino-livingstyleguide
+  domain: de.a9sapp.eu
+  path: "."
