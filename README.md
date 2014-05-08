@@ -21,7 +21,7 @@ of the Rails example. Setup and development is documented in **[this README](htt
 Padrino Living Style Guide
 ----------------------------
 
-This works with [padrino 0.12.0](http://www.padrinorb.com/blog/padrino-0-12-0-activesupport-4-rewritten-reloader-smarter-rendering-and-loads-more). Setup and development documentation will follow.
+This works with [padrino 0.12.0](http://www.padrinorb.com/blog/padrino-0-12-0-activesupport-4-rewritten-reloader-smarter-rendering-and-loads-more). Setup and development documentation is documented in **[this README](https://github.com/hagenburger/livingstyleguide-example/tree/master/padrino-example#readme).
 
 
 Credits
