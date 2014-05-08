@@ -17,7 +17,7 @@ gem 'rake'
 gem 'sass'
 gem 'haml'
 
-gem 'livingstyleguide', '1.0.4'
+gem 'livingstyleguide'
 gem 'padrino-sprockets', :require => ['padrino/sprockets'], :git => 'git://github.com/nightsailer/padrino-sprockets.git'
 
 

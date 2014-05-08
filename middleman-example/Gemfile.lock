@@ -25,7 +25,8 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
-    hooks (0.3.3)
+    hooks (0.4.0)
+      uber (~> 0.0.4)
     i18n (0.6.9)
     json (1.8.1)
     kramdown (1.3.3)
@@ -33,11 +34,11 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    livingstyleguide (1.0.4)
+    livingstyleguide (1.0.0)
       compass
-      hooks (= 0.3.3)
+      hooks
       minisyntax
-      redcarpet (~> 3.0.0)
+      redcarpet
       sass
       thor
       tilt
@@ -86,7 +87,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
-    redcarpet (3.0.0)
+    redcarpet (3.1.1)
     sass (3.2.19)
     sprockets (2.12.1)
       hike (~> 1.2)
@@ -102,6 +103,7 @@ GEM
     thread_safe (0.3.3)
     tilt (1.4.1)
     tzinfo (0.3.39)
+    uber (0.0.6)
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
