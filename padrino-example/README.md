@@ -22,7 +22,7 @@ Development
     cd livingstyleguide-example/padrino-example
     bundle exec padrino s
 
-Now you can open the style guide at <http://localhost:3001/assets/styleguide.html>
+Now you can open the style guide at <http://localhost:3000/assets/styleguide.html>
 
 
 Quick Documentation
