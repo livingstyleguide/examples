@@ -2,7 +2,7 @@ Living Style Guide
 ==================
 
 Example project for the [Living Style Guide Gem](https://github.com/hagenburger/livingstyleguide). You can find an
-  online version under <http://padrino-livingstyleguide.de.a9sapp.eu/assets/styleguide.html>
+  online version under <http://padrino-livingstyleguide.de.a9sapp.eu/assets/styleguide.html>.
 
 
 Setup
