@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "middleman"
+gem "middleman", "3.3.6"
 gem "middleman-sprockets"
-gem "livingstyleguide"
+gem "livingstyleguide", "~> 1.2.0"
 
